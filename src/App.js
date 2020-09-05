@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef} from 'react';
 import './index.css';
 import { ReactComponent as Compass } from './img/cursor.svg';
-import { ReactComponent as Info } from './img/info.svg';
+import { ReactComponent as Info } from './img/info-solid.svg';
 import { ReactComponent as Ai } from './img/artificial-intelligence.svg';
 import { ReactComponent as Blog } from './img/blogging.svg';
 import { ReactComponent as DataVisualisation } from './img/smartphone.svg';
 import { ReactComponent as Leftchevron } from './img/left-chevron.svg';
+import { ReactComponent as Code } from './img/code-solid.svg';
+import { ReactComponent as Settings } from './img/cog-solid.svg'; 
 import { CSSTransition } from 'react-transition-group';
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
 function Navbar(props) {
   return (
     <div className = 'header'>
-      <h1 className='logo'>sauravDutt.tech</h1>
+      <h1 className='logo'>SauravDutt</h1>
       <nav className="navbar">
         <ul className="navbar-nav">{props.children}</ul>
       </nav>
@@ -100,7 +102,7 @@ function DropdownMenu() {
             Feeds
           </DropdownItem>
           <DropdownItem
-            leftIcon={<Blog />}
+            leftIcon={<Settings />}
             rightIcon={<Blog />}
             goToMenu="settings">
             Settings
@@ -121,9 +123,6 @@ function DropdownMenu() {
           Back
           </DropdownItem>
           <DropdownItem leftIcon={<Blog />}>Theam</DropdownItem>
-          <DropdownItem leftIcon={<Blog />}>CSS</DropdownItem>
-          <DropdownItem leftIcon={<Ai />}>JavaScript</DropdownItem>
-          <DropdownItem leftIcon={<DataVisualisation />}>Awesome!</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -134,11 +133,11 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon={<Blog />}>
+          <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon="🦘">Artificial Neural Network</DropdownItem>
-          <DropdownItem leftIcon="><">Data Analytics</DropdownItem>
+          <DropdownItem leftIcon={<Ai />}>Artificial Neural Network</DropdownItem>
+          <DropdownItem leftIcon={<DataVisualisation />}>Data Analytics</DropdownItem>
           <DropdownItem leftIcon="🦋">Internet Of Things</DropdownItem>
           <DropdownItem leftIcon="🦔">Dron Tech</DropdownItem>
         </div>
@@ -151,7 +150,7 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon={<Blog />}>
+          <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
           <DropdownItem leftIcon="🦘">Add Feed</DropdownItem>
@@ -166,11 +165,11 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon={<Blog />}>
+          <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon="🦘">Info</DropdownItem>
-          <DropdownItem leftIcon="🐸">Skills</DropdownItem>
+          <DropdownItem leftIcon={<Info />}>Info</DropdownItem>
+          <DropdownItem leftIcon={<Code />}>Skills</DropdownItem>
           <DropdownItem leftIcon="🐸">Projects</DropdownItem>
           <DropdownItem leftIcon="🐸">contact</DropdownItem>
         </div>
