@@ -116,7 +116,7 @@ a {
   position: absolute;
   top: 85px;
   width: 300px;
-  transform: translateX(-40%);
+  transform: translateX(-42%);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
