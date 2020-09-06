@@ -27,7 +27,7 @@ function App() {
 function Navbar(props) {
   return (
     <div className = 'header'>
-      <h1 className='logo'>SauravDutt</h1>
+      <h1 className='logo'>Saurav</h1>
       <nav className="navbar">
         <ul className="navbar-nav">{props.children}</ul>
       </nav>
