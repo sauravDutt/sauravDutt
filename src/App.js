@@ -4,6 +4,14 @@ import { ReactComponent as Compass } from './img/cursor.svg';
 import { ReactComponent as Info } from './img/info-solid.svg';
 import { ReactComponent as Ai } from './img/artificial-intelligence.svg';
 import { ReactComponent as Blog } from './img/blogging.svg';
+import { ReactComponent as FeedsLogo } from './img/comments-regular.svg';
+import { ReactComponent as FeedAddBtn } from './img/blog.svg';
+import { ReactComponent as FeedsbrouseBtn } from './img/review.svg';
+import { ReactComponent as Iot } from './img/robot.svg';
+import { ReactComponent as Theme } from './img/theme.svg'
+import { ReactComponent as Dt } from './img/quadrocopter.svg';
+import { ReactComponent as Project } from './img/project.svg';
+import { ReactComponent as Phone } from './img/phone-alt-solid.svg';
 import { ReactComponent as DataVisualisation } from './img/smartphone.svg';
 import { ReactComponent as Leftchevron } from './img/left-chevron.svg';
 import { ReactComponent as Code } from './img/code-solid.svg';
@@ -96,7 +104,7 @@ function DropdownMenu() {
             Posts
           </DropdownItem>
           <DropdownItem
-            leftIcon="🍻"
+            leftIcon={<FeedsLogo />}
             rightIcon={<Blog />}
             goToMenu="feeds">
             Feeds
@@ -122,7 +130,7 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
           Back
           </DropdownItem>
-          <DropdownItem leftIcon={<Blog />}>Theam</DropdownItem>
+          <DropdownItem leftIcon={<Theme />}>Theme</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -138,8 +146,8 @@ function DropdownMenu() {
           </DropdownItem>
           <DropdownItem leftIcon={<Ai />}>Artificial Neural Network</DropdownItem>
           <DropdownItem leftIcon={<DataVisualisation />}>Data Analytics</DropdownItem>
-          <DropdownItem leftIcon="🦋">Internet Of Things</DropdownItem>
-          <DropdownItem leftIcon="🦔">Dron Tech</DropdownItem>
+          <DropdownItem leftIcon={<Iot />}>Internet Of Things</DropdownItem>
+          <DropdownItem leftIcon={<Dt />}>Dron Tech</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -153,8 +161,8 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon="🦘">Add Feed</DropdownItem>
-          <DropdownItem leftIcon="🐸">Brouse Feeds</DropdownItem>
+          <DropdownItem leftIcon={<FeedAddBtn />}>Add Feed</DropdownItem>
+          <DropdownItem leftIcon={<FeedsbrouseBtn />}>Brouse Feeds</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -170,8 +178,8 @@ function DropdownMenu() {
           </DropdownItem>
           <DropdownItem leftIcon={<Info />}>Info</DropdownItem>
           <DropdownItem leftIcon={<Code />}>Skills</DropdownItem>
-          <DropdownItem leftIcon="🐸">Projects</DropdownItem>
-          <DropdownItem leftIcon="🐸">contact</DropdownItem>
+          <DropdownItem leftIcon={<Project />}>Projects</DropdownItem>
+          <DropdownItem leftIcon={<Phone />}>contact</DropdownItem>
         </div>
       </CSSTransition>
 
