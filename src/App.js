@@ -11,6 +11,7 @@ import { ReactComponent as Iot } from './img/robot.svg';
 import { ReactComponent as Theme } from './img/theme.svg'
 import { ReactComponent as Dt } from './img/quadrocopter.svg';
 import { ReactComponent as Project } from './img/project.svg';
+import { ReactComponent as PostsBtn } from './img/bookmark-regular.svg'
 import { ReactComponent as Phone } from './img/phone-alt-solid.svg';
 import { ReactComponent as DataVisualisation } from './img/smartphone.svg';
 import { ReactComponent as Leftchevron } from './img/left-chevron.svg';
@@ -98,7 +99,7 @@ function DropdownMenu() {
             About
           </DropdownItem>
           <DropdownItem
-            leftIcon="🍻"
+            leftIcon={<PostsBtn />}
             rightIcon={<Blog />}
             goToMenu="posts">
             Posts
