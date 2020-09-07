@@ -18,6 +18,8 @@ import { ReactComponent as Leftchevron } from './img/left-chevron.svg';
 import { ReactComponent as Code } from './img/code-solid.svg';
 import { ReactComponent as Settings } from './img/cog-solid.svg'; 
 import { CSSTransition } from 'react-transition-group';
+import InfoComp from './comps/InfoComp';
+
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
           <DropdownMenu />
         </NavItem>
       </Navbar>
+      <InfoComp />
     </div>
   );
 }
@@ -36,7 +39,7 @@ function App() {
 function Navbar(props) {
   return (
     <div className = 'header'>
-      <h1 className='logo'>SauravDutt</h1>
+      <h1 className='logo'>Saurav<span className='colorChange'>Dutt</span></h1>
       <nav className="navbar">
         <ul className="navbar-nav">{props.children}</ul>
       </nav>
