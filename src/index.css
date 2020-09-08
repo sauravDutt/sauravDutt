@@ -214,6 +214,8 @@ a {
 }
 .post-info p {
   margin-top: -5px;
+  background-color: var(--bg);
+  color: #fff;
 }
 .post-title {
   font-family: 'logo';
