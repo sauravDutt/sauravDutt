@@ -22,6 +22,7 @@ import InfoComp from './comps/InfoComp';
 
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar>
