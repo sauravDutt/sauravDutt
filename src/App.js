@@ -22,15 +22,18 @@ import InfoComp from './comps/InfoComp';
 
 
 function App() {
+
+  const [showInfo, setShowInfo] = useState(null);
+
   return (
     <div className="App">
       <Navbar>
         <NavItem icon={<Info />} />
         <NavItem icon={<Compass />}> 
-          <DropdownMenu />
+          <DropdownMenu setShowInfo={setShowInfo}/>
         </NavItem>
       </Navbar>
-      <InfoComp />
+      {showInfo && <InfoComp setShowInfo={setShowInfo}/>}
     </div>
   );
 }
@@ -61,7 +64,11 @@ function NavItem(props) {
   );
 }
 
-function DropdownMenu() {
+function DropdownMenu({setShowInfo}) {
+
+  const showInformation = () => {
+    setShowInfo(1);
+  }
   const [activeMenu, setActiveMenu] = useState('main');
   const [menuHeight, setMenuHeight] = useState(null);
   const dropdownRef = useRef(null);
@@ -78,8 +85,8 @@ function DropdownMenu() {
   function DropdownItem(props) {
     return (
       <a href="#🍻" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
-        <span className="icon-button">{props.leftIcon}</span>
-        {props.children}
+        <span className="icon-button" onClick = {props.clickFunction}>{props.leftIcon}</span>
+        <span onClick = {props.clickFunction}>{props.children}</span>
         <span className="icon-right">{props.rightIcon}</span>
       </a>
     );
@@ -180,7 +187,7 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon={<Info />}>Info</DropdownItem>
+          <DropdownItem leftIcon={<Info />} clickFunction={showInformation}>Info</DropdownItem>
           <DropdownItem leftIcon={<Code />}>Skills</DropdownItem>
           <DropdownItem leftIcon={<Project />}>Projects</DropdownItem>
           <DropdownItem leftIcon={<Phone />}>contact</DropdownItem>

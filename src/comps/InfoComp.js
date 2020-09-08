@@ -1,19 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const InfoComp = () => {
+const InfoComp = ({setShowInfo}) => {
 
-    // const removeInfo = (e) => {
-    //     if (e.target.classList.contains('infoBackdrop')) {
-    //         setShowInfo(null);
-    //     }
-    //   }
-    // The following is a very bad practice the document.getElementById is not the way.......
     const removeInfo = (e) => {
         if (e.target.classList.contains('infoBackdrop')) {
-            document.getElementById('information').style.display='none';
+            setShowInfo(null);
         }
-    }
+      }
+    
+    // // The following is a very bad practice the document.getElementById is not the way.......
+    // const removeInfo = (e) => {
+    //     if (e.target.classList.contains('infoBackdrop')) {
+    //         document.getElementById('information').style.display='none';
+    //     }
+    // }
 
     return (
         <motion.div className="infoBackdrop" id='information' onClick={removeInfo}
