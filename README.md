@@ -1,4 +1,4 @@
-# sauravDutt [sauravdutt.tech](https://www.sauravdutt.tech/)
+# sauravDutt | [sauravdutt.tech](https://www.sauravdutt.tech/)
 sauravDutt, or sauravdutt.tech is my portfolio website created by the following :- <br />
 -> React js
 -> Node
