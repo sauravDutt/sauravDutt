@@ -16,9 +16,12 @@ A little about me !! -
 “The function of good software is to make the complex appear to be simple.” - Grady Booch. I am a self taught web developer and a learner, I like to research about latest tech, new frameworks and polish my skills. I have an insatiable curiosity for AI – particularly deep learning – applications and their potential to change the technology landscape.
 
 <b>Posts</b> :- <br />
-posts are like bolgs on subjects I am studying in my bachelor's. Some of the posts are on the following topics :-<br />
+Posts are like bolgs on subjects I am studying in my bachelor's. Some of the posts are on the following topics :-<br />
 <b>Artificial Neural Network</b> , <b>Data Analytics</b> , <b>Internet Of Things </b> and <b>Drone Tech</b>. <br />
 The users (trafic on my website) can read posts, add comments and like.
+
+<b>Feeds</b> :- <br />
+Feeds or feed back are utilities for the user to add and brouse past feeds, the users can post and comment endless amount of feeds. There's no Authentication just a small email varification and the user is good to go!! 
 
 ## Available Scripts
 
