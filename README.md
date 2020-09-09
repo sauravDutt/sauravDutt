@@ -1,4 +1,11 @@
-# sauravDutt
+# sauravDutt,
+sauravDutt, or sauravdutt.tech is my portfolio web site created by the following tech :-
+-> React js
+-> Node
+-> Express
+-> Mongo DB
+Designed with a mobile first approach. This is also my last  
+### `sauravdutt.tech`
 
 ## Available Scripts
 
