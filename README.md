@@ -1,12 +1,22 @@
 # sauravDutt,
-sauravDutt, or sauravdutt.tech is my portfolio web site created by the following tech :-
+sauravDutt, or sauravdutt.tech is my portfolio web site created by the following tech :- <br />
 -> React js
 -> Node
 -> Express
--> Mongo DB
-Designed with a mobile first approach. This is also my last  
+-> Mongo DB 
+-> Also some othe useful react libraries<br />
+Designed with a mobile first approach. This is also my last Javascript Web Dev project.
+
 ### `sauravdutt.tech`
 
+My portfolio website includes the following :- <br />
+
+Info :- <br />
+A little about me !! - 
+“The function of good software is to make the complex appear to be simple.” - Grady Booch. I am a self taught web developer and a learner, I like to research about latest tech, new frameworks and polish my skills. I have an insatiable curiosity for AI – particularly deep learning – applications and their potential to change the technology landscape.
+
+Posts :- <br />
+posts are like bolg on some of the topics I am interested in 
 ## Available Scripts
 
 In the project directory, you can run:
