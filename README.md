@@ -26,6 +26,10 @@ Feeds or feed back are utilities for the user to add and brouse past feeds, the 
 <b>Settings</b> :- <br />
 By default the theme of the website(or the web application) will be Dark, but there will be a toggle switch in Settings -> Themes -> Toggle Switch, with two modes Dark and light (or Night and Day).
 
+### `Release`
+
+The website or the web application will be live by the 2nd of Octuber,2020. Till then the development prototype is available at [sd.sauravdutt.tech](https://www.sd.sauravdutt.tech/) This is just for the prototype deployed for testing purpose only.
+
 ## Available Scripts
 
 In the project directory, you can run:
