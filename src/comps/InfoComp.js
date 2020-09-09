@@ -39,7 +39,9 @@ const InfoComp = ({setShowInfo}) => {
                     learning – applications and their potential to change 
                     the technology landscape.
                     </p>
-                    <span className="gitHubIcon"><a href="https://github.com/sauravDutt" className="gitHubIconLink"><i class="fab fa-github"></i></a></span> <span><button onClick={showSkillsfrInfo} className="skillBtn">Skills</button></span>
+                    <br />
+                    <span className="gitHubIcon"><a href="https://github.com/sauravDutt" className="gitHubIconLink"><i class="fab fa-github gitIconicon"></i> 18 Repositories</a></span> <span><button onClick={showSkillsfrInfo} className="skillBtn">Skills</button></span>
+                    <br /><br />
                 </div>
             </motion.div>
         </motion.div>

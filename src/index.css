@@ -235,6 +235,36 @@ a {
   height: 100%;
   background-color: rgba(15, 15, 15, 0.87);
 }
+.gitHubIcon {
+  margin-top: -5px;
+  padding: 10px 0;
+}
+.gitIconicon{
+  font-size: 30px;
+}
+.gitHubIconLink {
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.gitHubIconLink:hover{
+  color:rgba(255, 255, 255, 0.596);
+}
+.skillBtn {
+  float: right;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin-top: -5px;
+  font-size: 18px;
+  border: var(--border);
+  padding:5px ;
+  border-radius: 15px;
+}
+.skillBtn:hover {
+  background-color: #fff;
+  color: #121212;
+}
 @media only screen and (max-width: 700px) {
   .logo {
     margin-left: 20px;
