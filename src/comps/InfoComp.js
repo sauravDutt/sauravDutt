@@ -15,6 +15,9 @@ const InfoComp = ({setShowInfo}) => {
     //         document.getElementById('information').style.display='none';
     //     }
     // }
+    const showSkillsfrInfo = () => {
+        console.log('hello from Skills')
+    }
 
     return (
         <motion.div className="infoBackdrop" id='information' onClick={removeInfo}
@@ -36,6 +39,7 @@ const InfoComp = ({setShowInfo}) => {
                     learning – applications and their potential to change 
                     the technology landscape.
                     </p>
+                    <span className="gitHubIcon"><a href="https://github.com/sauravDutt" className="gitHubIconLink"><i class="fab fa-github"></i></a></span> <span><button onClick={showSkillsfrInfo} className="skillBtn">Skills</button></span>
                 </div>
             </motion.div>
         </motion.div>
