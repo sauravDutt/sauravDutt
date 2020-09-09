@@ -28,7 +28,7 @@ By default the theme of the website(or the web application) will be Dark, but th
 
 ### `Release`
 
-The website or the web application will be live by the 2nd of Octuber,2020. Till then the development prototype is available at [sd.sauravdutt.tech](https://www.sd.sauravdutt.tech/) This is just for the prototype deployed for testing purpose only.
+The website or the web application will be live by the 2nd of Octuber,2020. Till then the development prototype is available at [sd.sauravdutt.tech](https://sd.sauravdutt.tech/) This is just for the prototype deployed for testing purpose only.
 
 ## Available Scripts
 
