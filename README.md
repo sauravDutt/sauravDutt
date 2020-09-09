@@ -23,6 +23,9 @@ The users (trafic on my website) can read posts, add comments and like.
 <b>Feeds</b> :- <br />
 Feeds or feed back are utilities for the user to add and brouse past feeds, the users can post and comment endless amount of feeds. There's no Authentication just a small email varification and the user is good to go!! 
 
+<b>Settings</b> :- <br />
+Initialy by defolt the theme of the website(or the web application) will be Dark, but there will be a toogle switch in Settings -> Themes -> Toogle Switch, with two modes Dark and light or Night and Day.
+
 ## Available Scripts
 
 In the project directory, you can run:
