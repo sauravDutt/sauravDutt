@@ -1,4 +1,5 @@
 # sauravDutt 
+ ![](one.gif) <br />
 sauravDutt, or [sauravdutt.tech](https://www.sauravdutt.tech/) is my portfolio website created by  :- <br />
 -> <b>React js</b>
 -> <b>Node</b>
