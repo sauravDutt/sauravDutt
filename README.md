@@ -33,6 +33,7 @@ The website or the web application will be live by the 2nd of Octuber,2020. Till
 
 ## Available Scripts
 
+### `cd Notes`
 In the project directory, you can run:
 
 ### `npm start`
