@@ -10,12 +10,9 @@ import { ReactComponent as FeedsbrouseBtn } from './img/review.svg';
 import { ReactComponent as Iot } from './img/robot.svg';
 import { ReactComponent as Theme } from './img/theme.svg'
 import { ReactComponent as Dt } from './img/quadrocopter.svg';
-import { ReactComponent as Project } from './img/project.svg';
 import { ReactComponent as PostsBtn } from './img/bookmark-regular.svg'
-import { ReactComponent as Phone } from './img/phone-alt-solid.svg';
 import { ReactComponent as DataVisualisation } from './img/smartphone.svg';
 import { ReactComponent as Leftchevron } from './img/left-chevron.svg';
-import { ReactComponent as Code } from './img/code-solid.svg';
 import { ReactComponent as Settings } from './img/cog-solid.svg'; 
 import { CSSTransition } from 'react-transition-group';
 import InfoComp from './comps/InfoComp';
@@ -24,11 +21,13 @@ import InfoComp from './comps/InfoComp';
 function App() {
 
   const [showInfo, setShowInfo] = useState(null);
-
+  const showInformation = () => {
+    setShowInfo(1);
+  }
   return (
     <div className="App">
       <Navbar>
-        <NavItem icon={<Info />} />
+        <NavItem icon={<Info />} clickFunction={showInformation} />
         <NavItem icon={<Compass />}> 
           <DropdownMenu setShowInfo={setShowInfo}/>
         </NavItem>
@@ -42,7 +41,7 @@ function App() {
 function Navbar(props) {
   return (
     <div className = 'header'>
-      <h1 className='logo'>Saurav<span className='colorChange'>Dutt</span></h1>
+      <h1 className='logo'>Notes | SD</h1>
       <nav className="navbar">
         <ul className="navbar-nav">{props.children}</ul>
       </nav>
@@ -56,7 +55,7 @@ function NavItem(props) {
   return (
     <li className="nav-item">
       <a href="#🍻" className="icon-button" onClick={() => setOpen(!open)}>
-        {props.icon}
+        <span onClick = {props.clickFunction}>{props.icon}</span>
       </a>
 
       {open && props.children}
@@ -64,11 +63,9 @@ function NavItem(props) {
   );
 }
 
-function DropdownMenu({setShowInfo}) {
+function DropdownMenu() {
 
-  const showInformation = () => {
-    setShowInfo(1);
-  }
+  
   const [activeMenu, setActiveMenu] = useState('main');
   const [menuHeight, setMenuHeight] = useState(null);
   const dropdownRef = useRef(null);
@@ -102,12 +99,7 @@ function DropdownMenu({setShowInfo}) {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-        <DropdownItem
-            leftIcon="🍺"
-            rightIcon={<Blog />}
-            goToMenu="about">
-            About
-          </DropdownItem>
+        
           <DropdownItem
             leftIcon={<PostsBtn />}
             rightIcon={<Blog />}
@@ -177,22 +169,6 @@ function DropdownMenu({setShowInfo}) {
         </div>
       </CSSTransition>
 
-      <CSSTransition
-        in={activeMenu === 'about'}
-        timeout={500}
-        classNames="menu-secondary"
-        unmountOnExit
-        onEnter={calcHeight}>
-        <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
-            Back
-          </DropdownItem>
-          <DropdownItem leftIcon={<Info />} clickFunction={showInformation}>Info</DropdownItem>
-          <DropdownItem leftIcon={<Code />}>Skills</DropdownItem>
-          <DropdownItem leftIcon={<Project />}>Projects</DropdownItem>
-          <DropdownItem leftIcon={<Phone />}>contact</DropdownItem>
-        </div>
-      </CSSTransition>
 
     </div>
   );
