@@ -4,18 +4,18 @@ import { ReactComponent as Compass } from './img/cursor.svg';
 import { ReactComponent as Info } from './img/info-solid.svg';
 import { ReactComponent as Ai } from './img/artificial-intelligence.svg';
 import { ReactComponent as Blog } from './img/blogging.svg';
-import { ReactComponent as FeedsLogo } from './img/comments-regular.svg';
 import { ReactComponent as FeedAddBtn } from './img/blog.svg';
 import { ReactComponent as FeedsbrouseBtn } from './img/review.svg';
 import { ReactComponent as Iot } from './img/robot.svg';
-import { ReactComponent as Theme } from './img/theme.svg'
+import { ReactComponent as ProjectIdea } from './img/project.svg'
 import { ReactComponent as Dt } from './img/quadrocopter.svg';
 import { ReactComponent as PostsBtn } from './img/bookmark-regular.svg'
 import { ReactComponent as DataVisualisation } from './img/smartphone.svg';
 import { ReactComponent as Leftchevron } from './img/left-chevron.svg';
-import { ReactComponent as Settings } from './img/cog-solid.svg'; 
+import { ReactComponent as Settings } from './img/plus-solid.svg'; 
 import { CSSTransition } from 'react-transition-group';
 import InfoComp from './comps/InfoComp';
+import DroneTechComp from './comps/Dronetech';
 
 
 function App() {
@@ -32,6 +32,7 @@ function App() {
           <DropdownMenu setShowInfo={setShowInfo}/>
         </NavItem>
       </Navbar>
+      <DroneTechComp />
       {showInfo && <InfoComp setShowInfo={setShowInfo}/>}
     </div>
   );
@@ -109,33 +110,18 @@ function DropdownMenu() {
             Posts
           </DropdownItem>
           <DropdownItem
-            leftIcon={<FeedsLogo />}
+            leftIcon={<ProjectIdea />}
             rightIcon={<Blog />}
             goToMenu="feeds">
-            Feeds
+            Project Ideas
           </DropdownItem>
           <DropdownItem
             leftIcon={<Settings />}
-            rightIcon={<Blog />}
-            goToMenu="settings">
-            Settings
+            rightIcon={<Blog />}>
+            Add Insight
           </DropdownItem>
           
 
-        </div>
-      </CSSTransition>
-
-      <CSSTransition
-        in={activeMenu === 'settings'}
-        timeout={500}
-        classNames="menu-secondary"
-        unmountOnExit
-        onEnter={calcHeight}>
-        <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
-          Back
-          </DropdownItem>
-          <DropdownItem leftIcon={<Theme />}>Theme</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -152,7 +138,7 @@ function DropdownMenu() {
           <DropdownItem leftIcon={<Ai />}>Artificial Neural Network</DropdownItem>
           <DropdownItem leftIcon={<DataVisualisation />}>Data Analytics</DropdownItem>
           <DropdownItem leftIcon={<Iot />}>Internet Of Things</DropdownItem>
-          <DropdownItem leftIcon={<Dt />}>Dron Tech</DropdownItem>
+          <DropdownItem leftIcon={<Dt />}>Drones</DropdownItem>
         </div>
       </CSSTransition>
 

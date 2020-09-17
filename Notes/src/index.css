@@ -209,6 +209,15 @@ a {
   border-radius: 15px;
   padding: 0 20px;
 }
+.post-blog{
+  color: #fff;
+  width: 800px;
+  margin: 30px auto;
+  border: var(--border);
+  background-color: var(--bg);
+  border-radius: 15px;
+  padding: 0 20px;
+}
 .post-info {
   text-align: justify;
 }
@@ -264,6 +273,12 @@ a {
   background-color: #fff;
   color: #121212;
 }
+#read-more{
+  display: none;
+}
+#readLess {
+  display: none;
+}
 @media only screen and (max-width: 700px) {
   .logo {
     margin-left: 20px;
@@ -273,6 +288,9 @@ a {
     margin-right: 9px;
   }
   .post {
+    width: 80vw;
+  }
+  .post-blog {
     width: 80vw;
   }
   .post-title {
