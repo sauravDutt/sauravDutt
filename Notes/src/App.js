@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef} from 'react';
 import './index.css';
 import { ReactComponent as Compass } from './img/down.svg';
 import { ReactComponent as Info } from './img/info-solid.svg';
-import { ReactComponent as Ai } from './img/artificial-intelligence.svg';
+import { ReactComponent as Ai } from './img/brain-solid.svg';
 import { ReactComponent as Blog } from './img/blogging.svg';
+import { ReactComponent as Python } from './img/python-brands.svg';
+import { ReactComponent as Js } from './img/js-brands.svg';
 import { ReactComponent as Cart } from './img/shopping-cart-solid.svg';
 import { ReactComponent as Iot } from './img/robot.svg';
-import { ReactComponent as ProjectIdea } from './img/project.svg'
+import { ReactComponent as ProjectIdea } from './img/code-solid.svg'
 import { ReactComponent as Dt } from './img/quadrocopter.svg';
 import { ReactComponent as PostsBtn } from './img/bookmark-regular.svg'
 import { ReactComponent as DataVisualisation } from './img/smartphone.svg';
@@ -80,7 +82,6 @@ function DropdownMenu({setShowD, setOpen}) {
   }
   const showDron = () => {
     setShowD(1);
-    setOpen(false);
   }
  
   function DropdownItem(props) {
@@ -110,7 +111,7 @@ function DropdownMenu({setShowD, setOpen}) {
             leftIcon={<PostsBtn />}
             rightIcon={<Blog />}
             goToMenu="posts">
-            Posts
+            Study
           </DropdownItem>
           <DropdownItem
             leftIcon={<ProjectIdea />}
@@ -138,10 +139,10 @@ function DropdownMenu({setShowD, setOpen}) {
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
+          <DropdownItem leftIcon={<Js />}>JavaScript</DropdownItem>
+          <DropdownItem leftIcon={<Python />}>Python</DropdownItem>
           <DropdownItem leftIcon={<Ai />}>Artificial Neural Network</DropdownItem>
-          <DropdownItem leftIcon={<DataVisualisation />}>Data Analytics</DropdownItem>
           <DropdownItem leftIcon={<Iot />}>Internet Of Things</DropdownItem>
-          <DropdownItem leftIcon={<Dt />} clickFunction={showDron}>Drones</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -155,8 +156,9 @@ function DropdownMenu({setShowD, setOpen}) {
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon={<Dt />} >Drone Tech</DropdownItem>
+          <DropdownItem leftIcon={<Dt />} clickFunction={showDron}>Drone Tech</DropdownItem>
           <DropdownItem leftIcon={<Cart />}>E-commerce app</DropdownItem>
+          <DropdownItem leftIcon={<DataVisualisation />}>Data Analytics</DropdownItem>
         </div>
       </CSSTransition>
 
