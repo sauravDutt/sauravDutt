@@ -4,9 +4,7 @@ import { ReactComponent as Compass } from './img/cursor.svg';
 import { ReactComponent as Info } from './img/info-solid.svg';
 import { ReactComponent as Ai } from './img/artificial-intelligence.svg';
 import { ReactComponent as Blog } from './img/blogging.svg';
-import { ReactComponent as FeedAddBtn } from './img/blog.svg';
-import { ReactComponent as FeedsbrouseBtn } from './img/review.svg';
-import { ReactComponent as Iot } from './img/robot.svg';
+import { ReactComponent as Iot } from './img/robot.svg';  
 import { ReactComponent as ProjectIdea } from './img/project.svg'
 import { ReactComponent as Dt } from './img/quadrocopter.svg';
 import { ReactComponent as PostsBtn } from './img/bookmark-regular.svg'
@@ -111,8 +109,7 @@ function DropdownMenu() {
           </DropdownItem>
           <DropdownItem
             leftIcon={<ProjectIdea />}
-            rightIcon={<Blog />}
-            goToMenu="feeds">
+            rightIcon={<Blog />}>
             Project Ideas
           </DropdownItem>
           <DropdownItem
@@ -142,20 +139,6 @@ function DropdownMenu() {
         </div>
       </CSSTransition>
 
-      <CSSTransition
-        in={activeMenu === 'feeds'}
-        timeout={500}
-        classNames="menu-secondary"
-        unmountOnExit
-        onEnter={calcHeight}>
-        <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
-            Back
-          </DropdownItem>
-          <DropdownItem leftIcon={<FeedAddBtn />}>Add Feed</DropdownItem>
-          <DropdownItem leftIcon={<FeedsbrouseBtn />}>Brouse Feeds</DropdownItem>
-        </div>
-      </CSSTransition>
 
 
     </div>
