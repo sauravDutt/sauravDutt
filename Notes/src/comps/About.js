@@ -6,13 +6,9 @@ const About = () => {
             <div className='post-info-about'>
                 <h3 className='post-title'>notes<span className='aboutSecond'>| sd</span></h3>
                 <p>
-                    A drone, in technological terms, is an unmanned aircraft. 
-                    Drones are more formally known as unmanned aerial vehicles 
-                    (UAVs) or unmanned aircraft systems (UASes). Essentially, 
-                    a drone is a flying robot that can be remotely controlled 
-                    or fly autonomously through software-controlled flight plans 
-                    in their embedded systems, working in conjunction with onboard 
-                    sensors and GPS.
+                    Notes | SD, is a study material. A web application created with an objective of maintaining notes and taking record of all the project ideas.
+                    One stop destination for refreshing all the nessory skills and brushing the knowledge on the key subjects. The app is build with a mobile first 
+                    approach.
                 </p>
                 <br />
             </div>
