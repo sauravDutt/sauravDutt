@@ -17,6 +17,7 @@ import { ReactComponent as Settings } from './img/plus-solid.svg';
 import { CSSTransition } from 'react-transition-group';
 import InfoComp from './comps/InfoComp';
 import DroneTechComp from './comps/Dronetech';
+import About from './comps/About';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <DropdownMenu setShowD={setShowD}/>
         </NavItem>
       </Navbar>
+      <About />
       {showD && <DroneTechComp />}
       {showInfo && <InfoComp setShowInfo={setShowInfo}/>}
     </div>

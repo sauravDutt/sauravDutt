@@ -212,14 +212,28 @@ a {
 .post-blog{
   color: #fff;
   width: 800px;
-  margin: 30px auto;
+  margin: 5px auto;
   border: var(--border);
   background-color: var(--bg);
   border-radius: 15px;
   padding: 0 20px;
 }
+.post-about{
+  color: #fff;
+  width: 800px;
+  margin: 5px auto;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+.aboutSecond{
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
 .post-info {
   text-align: justify;
+}
+.post-info-about{
+  text-align: center;
 }
 .post-info p {
   margin-top: -5px;
@@ -291,6 +305,9 @@ a {
     width: 80vw;
   }
   .post-blog {
+    width: 80vw;
+  }
+  .post-about{
     width: 80vw;
   }
   .post-title {
