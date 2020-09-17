@@ -17,8 +17,10 @@ const DroneTechComp = () => {
     return (
         <div className="post-blog">
             <div className='post-info'>
-                <h3 className='post-title'>Drone</h3>
+                <h3 className='post-title'>DroneTech</h3>
                 <p>
+                    Drone Tech, is my dream project. The idea is to have a fully 
+                    automated drones, more like a drone butler. 
                     A drone, in technological terms, is an unmanned aircraft. 
                     Drones are more formally known as unmanned aerial vehicles 
                     (UAVs) or unmanned aircraft systems (UASes). Essentially, 
