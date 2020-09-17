@@ -23,15 +23,16 @@ function App() {
   const showInformation = () => {
     setShowInfo(1);
   }
+  const [showD, setShowD] = useState(null);
   return (
     <div className="App">
       <Navbar>
         <NavItem icon={<Info />} clickFunction={showInformation} />
         <NavItem icon={<Compass />}> 
-          <DropdownMenu setShowInfo={setShowInfo}/>
+          <DropdownMenu setShowD={setShowD}/>
         </NavItem>
       </Navbar>
-      <DroneTechComp />
+      {showD && <DroneTechComp />}
       {showInfo && <InfoComp setShowInfo={setShowInfo}/>}
     </div>
   );
@@ -51,7 +52,6 @@ function Navbar(props) {
 
 function NavItem(props) {
   const [open, setOpen] = useState(false);
-
   return (
     <li className="nav-item">
       <a href="#🍻" className="icon-button" onClick={() => setOpen(!open)}>
@@ -63,7 +63,7 @@ function NavItem(props) {
   );
 }
 
-function DropdownMenu() {
+function DropdownMenu({setShowD, setOpen}) {
 
   
   const [activeMenu, setActiveMenu] = useState('main');
@@ -77,6 +77,10 @@ function DropdownMenu() {
   function calcHeight(el) {
     const height = el.offsetHeight;
     setMenuHeight(height);
+  }
+  const showDron = () => {
+    setShowD(1);
+    setOpen(false);
   }
  
   function DropdownItem(props) {
@@ -137,7 +141,7 @@ function DropdownMenu() {
           <DropdownItem leftIcon={<Ai />}>Artificial Neural Network</DropdownItem>
           <DropdownItem leftIcon={<DataVisualisation />}>Data Analytics</DropdownItem>
           <DropdownItem leftIcon={<Iot />}>Internet Of Things</DropdownItem>
-          <DropdownItem leftIcon={<Dt />}>Drones</DropdownItem>
+          <DropdownItem leftIcon={<Dt />} clickFunction={showDron}>Drones</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -151,7 +155,7 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon={<Dt />}>Drone Tech</DropdownItem>
+          <DropdownItem leftIcon={<Dt />} >Drone Tech</DropdownItem>
           <DropdownItem leftIcon={<Cart />}>E-commerce app</DropdownItem>
         </div>
       </CSSTransition>
