@@ -233,7 +233,7 @@ a {
   text-align: justify;
 }
 .post-info-about{
-  text-align: center;
+  text-align: justify;
 }
 .post-info p {
   margin-top: -5px;
@@ -303,6 +303,9 @@ a {
   }
   .post {
     width: 80vw;
+  }
+  .post-info-about {
+    text-align: center;
   }
   .post-blog {
     width: 80vw;

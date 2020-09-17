@@ -8,7 +8,7 @@ const About = () => {
                 <p>
                     Notes | SD, is a study material. A web application created with an objective of maintaining notes and taking record of all the project ideas.
                     One stop destination for refreshing all the nessory skills and brushing the knowledge on the key subjects. The app is build with a mobile first 
-                    approach.
+                    approach, using React js.
                 </p>
                 <br />
             </div>
