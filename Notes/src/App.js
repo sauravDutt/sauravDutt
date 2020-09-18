@@ -18,6 +18,10 @@ import { CSSTransition } from 'react-transition-group';
 import InfoComp from './comps/InfoComp';
 import DroneTechComp from './comps/Dronetech';
 import About from './comps/About';
+import JavaScript from './comps/JavaScript';
+import PythonComp from './comps/Python';
+import Artificial from './comps/Ann';
+import Internet from './comps/iot';
 
 
 function App() {
@@ -26,17 +30,25 @@ function App() {
   const showInformation = () => {
     setShowInfo(1);
   }
+  const [showJs, setShowJs] = useState(null);
   const [showD, setShowD] = useState(null);
+  const [showPython, setShowPython] = useState(null);
+  const [showAnn, setShowAnn] = useState(null);
+  const [showIot, setShowIot] = useState(null);
   return (
     <div className="App">
       <Navbar>
         <NavItem icon={<Info />} clickFunction={showInformation} />
         <NavItem icon={<Compass />}> 
-          <DropdownMenu setShowD={setShowD}/>
+          <DropdownMenu setShowD={setShowD} setShowJs={setShowJs} setShowPython={setShowPython} setShowAnn={setShowAnn} setShowIot={setShowIot}/>
         </NavItem>
       </Navbar>
       <About />
+      {showIot && <Internet />}
       {showD && <DroneTechComp />}
+      {showJs && <JavaScript />}
+      {showPython && <PythonComp />}
+      {showAnn && <Artificial />}
       {showInfo && <InfoComp setShowInfo={setShowInfo}/>}
     </div>
   );
@@ -67,7 +79,7 @@ function NavItem(props) {
   );
 }
 
-function DropdownMenu({setShowD, setOpen}) {
+function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIot}) {
 
   
   const [activeMenu, setActiveMenu] = useState('main');
@@ -85,7 +97,19 @@ function DropdownMenu({setShowD, setOpen}) {
   const showDron = () => {
     setShowD(1);
   }
- 
+  const showJavaScript = () => {
+    setShowJs(1);
+  }
+  const showPythonOk = () => {
+    setShowPython(1);
+  }
+  const showArtificial = () => {
+    setShowAnn(1);
+  }
+  const showInternet = () => {
+    setShowIot(1);
+  }
+
   function DropdownItem(props) {
     return (
       <span onClick = {props.clickFunction}>
@@ -141,10 +165,10 @@ function DropdownMenu({setShowD, setOpen}) {
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon={<Js />}>JavaScript</DropdownItem>
-          <DropdownItem leftIcon={<Python />}>Python</DropdownItem>
-          <DropdownItem leftIcon={<Ai />}>Artificial Neural Network</DropdownItem>
-          <DropdownItem leftIcon={<Iot />}>Internet Of Things</DropdownItem>
+          <DropdownItem leftIcon={<Js />} clickFunction={showJavaScript}>JavaScript</DropdownItem>
+          <DropdownItem leftIcon={<Python />} clickFunction={showPythonOk}>Python</DropdownItem>
+          <DropdownItem leftIcon={<Ai />} clickFunction={showArtificial}>Artificial Neural Network</DropdownItem>
+          <DropdownItem leftIcon={<Iot />} clickFunction={showInternet}>Internet Of Things</DropdownItem>
         </div>
       </CSSTransition>
 
