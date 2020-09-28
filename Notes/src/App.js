@@ -23,7 +23,7 @@ import PythonComp from './comps/Python';
 import Artificial from './comps/Ann';
 import Internet from './comps/iot';
 
-
+ 
 function App() {
 
   const [showInfo, setShowInfo] = useState(null);
@@ -58,7 +58,9 @@ function App() {
 function Navbar(props) {
   return (
     <div className = 'header'>
-      <h1 className='logo'>SauravDutt<span className='sub-logo'>.tech</span></h1>
+      <a href='#🍺' style={{textDecoration:'none'}}>
+        <h1 className='logo'>SauravDutt<span className='sub-logo'>.tech</span></h1>
+      </a>
       <nav className="navbar">
         <ul className="navbar-nav">{props.children}</ul>
       </nav>
