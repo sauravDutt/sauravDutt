@@ -166,6 +166,7 @@ a {
   position: absolute;
   top: 85px;
   width: 300px;
+  margin-top: 10px;
   transform: translateX(-42%);
   background-color: var(--bg);
   border: var(--border);
