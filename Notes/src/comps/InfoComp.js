@@ -34,9 +34,10 @@ const InfoComp = ({setShowInfo}) => {
                 <div className='post-info'>
                     <h3 className='post-title'>Info</h3>
                     <p>
-                    Notes | SD, is a study material. A web application created with an objective of maintaining notes and taking record of all the project ideas.
-                    One stop destination for refreshing all the nessory skills and brushing the knowledge on the key subjects. The app is build with a mobile first 
-                    approach, using React js.Started on the 17th of September,2020. This will always be a work in progress. Thank you for Reading !!
+                        <b>sauravDutt.tech</b>, is my portfolio web site build by React js and Google Firebase. 
+                        The application lets you add feeds or insights, read through tech related journals 
+                        and also explore some of my work in progress and past projects .
+                        Click on the down pointing arrow for navigation.
                     </p>
                     <br />
                     <span><button onClick={showHomefrInfo} className="homeBtn">sauravdutt.tech</button></span><span><button onClick={showSkillsfrInfo} className="skillBtn">Explore</button></span>

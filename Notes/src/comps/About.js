@@ -17,7 +17,7 @@ const About = () => {
                     <a href="https://github.com/sauravDutt" target='_blank' rel="noopener noreferrer" className="icon-button">
                         <span className = "icon-button-git"><Github /></span>
                     </a>
-                    <a href="https://github.com/sauravDutt" target='_blank' rel="noopener noreferrer" className="icon-button" style={{float:'right',marginTop:'-40px'}}>
+                    <a href="#one" target='_blank' rel="noopener noreferrer" className="icon-button" style={{float:'right',marginTop:'-40px'}}>
                         <span className = "icon-button-git"><Resume /></span>
                     </a>
                 </p>
