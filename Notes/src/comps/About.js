@@ -4,11 +4,12 @@ const About = () => {
     return (
         <div className="post-about">
             <div className='post-info-about'>
-                <h3 className='post-title'>notes<span className='aboutSecond'>| sd</span></h3>
+                <h3 className='post-title'>Sd <span className='aboutSecond'>| About</span></h3>
                 <p>
-                    Notes | SD, is a study material. A web application created with an objective of maintaining notes and taking record of all the project ideas.
-                    One stop destination for refreshing all the nessory skills and brushing the knowledge on the key subjects. The app is build with a mobile first 
-                    approach, using React js.
+                    <b>“The function of good software is to make the complex appear to be simple.”</b> -<b> Grady Booch</b>. 
+                    I am a self taught web developer and a learner, I like to research about latest tech, new 
+                    frameworks and polish my skills. I have an insatiable curiosity for AI – particularly deep 
+                    learning – applications and their potential to change the technology landscape.
                 </p>
                 <br />
             </div>
