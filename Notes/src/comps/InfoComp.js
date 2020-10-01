@@ -40,7 +40,7 @@ const InfoComp = ({setShowInfo}) => {
                         Click on the down pointing arrow for navigation.
                     </p>
                     <br />
-                    <span><button onClick={showHomefrInfo} className="homeBtn">Contact</button></span><span><button onClick={showSkillsfrInfo} className="skillBtn">Explore</button></span>
+                    <span><button onClick={showHomefrInfo} className="homeBtn">Portfolio</button></span><span><button onClick={showSkillsfrInfo} className="skillBtn">Explore</button></span>
                     <br /><br />
                 </div>
             </motion.div>

@@ -58,7 +58,7 @@ function App() {
 function Navbar(props) {
   return (
     <div className = 'header'>
-      <a href='#🍺' style={{textDecoration:'none'}}>
+      <a href='https://www.sauravdutt.tech/' style={{textDecoration:'none'}}>
         <h1 className='logo'>SauravDutt<span className='sub-logo'>.tech</span></h1>
       </a>
       <nav className="navbar">
