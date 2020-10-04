@@ -19,15 +19,16 @@ const Artificial = () => {
             <div className='post-info'>
                 <h3 className='post-title'>artificial neural network</h3>
                 <p>
-                    Drone Tech, is my dream project. The idea is to have a fully 
-                    automated drones, more like a drone butler. 
-                    A drone, in technological terms, is an unmanned aircraft. 
-                    Drones are more formally known as unmanned aerial vehicles 
-                    (UAVs) or unmanned aircraft systems (UASes). Essentially, 
-                    a drone is a flying robot that can be remotely controlled 
-                    or fly autonomously through software-controlled flight plans 
-                    in their embedded systems, working in conjunction with onboard 
-                    sensors and GPS.
+                    There is one reason why we are interested in building artificial neural networks (ANNs), that is 
+                    the Technical Viewpoint, some problems such as the character recognition or the prediction of future
+                    states of system reuire massively parallel and adaptive processing.
+                    The "building blocks" of neural networks are the neurons. In technical system we also refer to them as
+                    units or nodes. Basically, each neuron, receives input form many other neurons, changes it's internal this.state
+                    (activation) based on the current input, sends one output signal to many other neurons possibly including its 
+                    input neurons (recurrent network), information is transmitted as a series of electric impulses so called spikes,
+                    the frequency and phase of these spikes encodes the information. In biological systems, one neuron can be connected 
+                    to as many as 10,000 other neurons. Usually a neuron receives its information from othe neurons in a confined area, its so-called 
+                    receptive field.
                 </p>
                 <p id='read-more-ann'>
                     In the recent past, UAVs were most often associated with the military, 
