@@ -17,7 +17,7 @@ const Artificial = () => {
     return (
         <div className="post-blog">
             <div className='post-info'>
-                <h3 className='post-title'>artificial neural network</h3>
+                <h3 className='post-title'>artificial neural networks</h3>
                 <p>
                     There is one reason why we are interested in building artificial neural networks (ANNs), that is 
                     the Technical Viewpoint, some problems such as the character recognition or the prediction of future

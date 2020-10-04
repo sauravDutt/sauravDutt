@@ -167,7 +167,7 @@ function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIo
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon={<Ai />} clickFunction={showArtificial}>Artificial Neural Network</DropdownItem>
+          <DropdownItem leftIcon={<Ai />} clickFunction={showArtificial}>Artificial Neural Networks</DropdownItem>
           <DropdownItem leftIcon={<Python />} clickFunction={showPythonOk}>Python</DropdownItem>
           <DropdownItem leftIcon={<Js />} clickFunction={showJavaScript}>JavaScript</DropdownItem>
           <DropdownItem leftIcon={<Iot />} clickFunction={showInternet}>Internet Of Things</DropdownItem>
