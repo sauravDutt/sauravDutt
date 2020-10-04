@@ -31,13 +31,15 @@ const Artificial = () => {
                     <b>receptive field</b>.
                 </p>
                 <p id='read-more-ann'>
-                    In the recent past, UAVs were most often associated with the military, 
-                    where they were used initially for anti-aircraft target practice, 
-                    intelligence gathering and then, more controversially, as weapons 
-                    platforms. Drones are now also used in a wide range of civilian roles 
-                    ranging from search and rescue, surveillance, traffic monitoring, weather 
-                    monitoring and firefighting, to personal drones and business drone-based photography, 
-                    as well as videography, agriculture and even delivery services.
+                    An Artificial Neural Network is either a hardware implementation or a computer program which strives to 
+                    simulate the imformation prcessing capabilities of it's biological exemplar. ANNs are tipically composed 
+                    of a great number of interconnected artificial neurons. The artificial neurons are simplified models of 
+                    their biological counterparts. ANN is a technique for solving problems by constructing software that work 
+                    like our brains. <b>Defination</b> of Neural Network :- <b>A neural network is a system composed of many 
+                        simple processing elements operating in parallel which can <mark style={{backgroundColor:'red', color:'#fff'}}> acquire </mark>, <mark style={{backgroundColor:'green', color:'#fff'}}> store </mark> and <mark> utilize </mark> experiential knowledge.</b>
+                    Artificial Neural Networks are also named as <b>"artificial neural systems"</b> or <b>"parallel distributed processing systems"</b> or <b>"Connectionist systems"</b>. 
+                    ANNs acquires a large collection of units that are interconnected in some pattern to allow communication between the units. These units are also 
+                    refered to as <b>nodes</b> or <b>neurons</b>, are simple processors which operate in parallel.
                 </p>
                     <br />
                     <span><button onClick={showReadMore} className="homeBtn" id='readMoreBtnAnn'>Read More</button><button onClick={showReadLess} className="homeBtn" id='readLessBtnAnn'>Read Less</button></span>
