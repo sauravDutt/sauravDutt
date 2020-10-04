@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as Github } from '../img/github.svg';
-import { ReactComponent as Resume } from '../img/user.svg';
+import { ReactComponent as Resume } from '../img/resume.svg';
 
 const About = () => {
     return (
