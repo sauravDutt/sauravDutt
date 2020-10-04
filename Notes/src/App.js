@@ -43,12 +43,12 @@ function App() {
           <DropdownMenu setShowD={setShowD} setShowJs={setShowJs} setShowPython={setShowPython} setShowAnn={setShowAnn} setShowIot={setShowIot}/>
         </NavItem>
       </Navbar>
-      <About />
       {showIot && <Internet />}
       {showD && <DroneTechComp />}
       {showJs && <JavaScript />}
       {showPython && <PythonComp />}
       {showAnn && <Artificial />}
+      <About />
       {showInfo && <InfoComp setShowInfo={setShowInfo}/>}
     </div>
   );
@@ -167,9 +167,9 @@ function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIo
           <DropdownItem goToMenu="main" leftIcon={<Leftchevron />}>
             Back
           </DropdownItem>
-          <DropdownItem leftIcon={<Js />} clickFunction={showJavaScript}>JavaScript</DropdownItem>
-          <DropdownItem leftIcon={<Python />} clickFunction={showPythonOk}>Python</DropdownItem>
           <DropdownItem leftIcon={<Ai />} clickFunction={showArtificial}>Artificial Neural Network</DropdownItem>
+          <DropdownItem leftIcon={<Python />} clickFunction={showPythonOk}>Python</DropdownItem>
+          <DropdownItem leftIcon={<Js />} clickFunction={showJavaScript}>JavaScript</DropdownItem>
           <DropdownItem leftIcon={<Iot />} clickFunction={showInternet}>Internet Of Things</DropdownItem>
         </div>
       </CSSTransition>
