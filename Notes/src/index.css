@@ -32,6 +32,7 @@ code {
     monospace;
 }
 
+
 :root {
   --bg:  #121212;
   --bg-accent: #484a4d;
@@ -262,6 +263,9 @@ a {
   margin: 5px auto;
   border-radius: 15px;
   padding: 0 20px;
+}
+.about-btn:hover {
+  color: #fff;
 }
 .aboutSecond{
   font-size: 40px;

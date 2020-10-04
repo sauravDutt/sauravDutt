@@ -14,11 +14,11 @@ const About = () => {
                     learning – applications and their potential to change the technology landscape.
                 </p>
                 <p style={{textAlign:'center',justifyItems:'center', alignItems:'center'}}>
-                    <a href="https://github.com/sauravDutt" target='_blank' rel="noopener noreferrer" className="icon-button">
-                        <span className = "icon-button-git"><Github /></span>
+                    <a href="https://github.com/sauravDutt" target='_blank' rel="noopener noreferrer" className="icon-button about-btn" style={{backgroundColor:'transparent'}}>
+                        <span className = "icon-button-git" style={{backgroundColor:'transparent'}}><Github /></span> 20Repo
                     </a>
-                    <a href="#one" target='_blank' rel="noopener noreferrer" className="icon-button" style={{float:'right',marginTop:'-40px'}}>
-                        <span className = "icon-button-git"><Resume /></span>
+                    <a href="https://www.sauravdutt.tech/" target='_blank' rel="noopener noreferrer" className="icon-button about-btn" style={{float:'right',marginTop:'-40px', backgroundColor:'transparent'}}>
+                        Portfolio   <span className = "icon-button-git" style={{backgroundColor:'transparent'}}><Resume /></span>
                     </a>
                 </p>
                 <br />
