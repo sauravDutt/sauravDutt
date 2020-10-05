@@ -80,7 +80,7 @@ const Feeds = ({setShowFeeds}) => {
 
 function SignOut() {
   return auth.currentUser && (
-    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+    <button className="homeBtn"  onClick={() => auth.signOut()}>Sign Out</button>
   )
 }
 
