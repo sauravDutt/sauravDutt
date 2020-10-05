@@ -22,14 +22,18 @@ import JavaScript from './comps/JavaScript';
 import PythonComp from './comps/Python';
 import Artificial from './comps/Ann';
 import Internet from './comps/iot';
+import Feeds from './comps/Feeds';
 
- 
+
+
+
 function App() {
 
   const [showInfo, setShowInfo] = useState(null);
   const showInformation = () => {
     setShowInfo(1);
   }
+  const [showFeeds, setShowFeeds] = useState(null);
   const [showJs, setShowJs] = useState(null);
   const [showD, setShowD] = useState(null);
   const [showPython, setShowPython] = useState(null);
@@ -40,9 +44,10 @@ function App() {
       <Navbar>
         <NavItem icon={<Info />} clickFunction={showInformation} />
         <NavItem icon={<Compass />}> 
-          <DropdownMenu setShowD={setShowD} setShowJs={setShowJs} setShowPython={setShowPython} setShowAnn={setShowAnn} setShowIot={setShowIot}/>
+          <DropdownMenu setShowD={setShowD} setShowJs={setShowJs} setShowPython={setShowPython} setShowAnn={setShowAnn} setShowIot={setShowIot} setShowFeeds={setShowFeeds}/>
         </NavItem>
       </Navbar>
+      {showFeeds && <Feeds setShowFeeds={setShowFeeds}/>}
       {showIot && <Internet />}
       {showD && <DroneTechComp />}
       {showJs && <JavaScript />}
@@ -81,7 +86,7 @@ function NavItem(props) {
   );
 }
 
-function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIot}) {
+function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIot, setShowFeeds}) {
 
   
   const [activeMenu, setActiveMenu] = useState('main');
@@ -110,6 +115,9 @@ function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIo
   }
   const showInternet = () => {
     setShowIot(1);
+  }
+  const showFeedBacks = () => {
+    setShowFeeds(1);
   }
 
   function DropdownItem(props) {
@@ -149,7 +157,9 @@ function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIo
           </DropdownItem>
           <DropdownItem
             leftIcon={<Settings />}
-            rightIcon={<Blog />}>
+            rightIcon={<Blog />}
+            clickFunction={showFeedBacks}
+            >
             Add Insight
           </DropdownItem>
           
