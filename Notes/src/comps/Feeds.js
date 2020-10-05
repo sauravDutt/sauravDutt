@@ -8,13 +8,13 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-    apiKey: "AIzaSyB5lHI6diU3Fr5JhlAcp3FrhQJCQXT6P0w",
-    authDomain: "engaged-carving-241615.firebaseapp.com",
-    databaseURL: "https://engaged-carving-241615.firebaseio.com",
-    projectId: "engaged-carving-241615",
-    storageBucket: "engaged-carving-241615.appspot.com",
-    messagingSenderId: "432995599324",
-    appId: "1:432995599324:web:e2e6cc2095702e2609c519"
+    apiKey: "AIzaSyCX77RJHqZ7Rf8smFymfd05r-ii9WRfbkQ",
+    authDomain: "sauravdutt-tech.firebaseapp.com",
+    databaseURL: "https://sauravdutt-tech.firebaseio.com",
+    projectId: "sauravdutt-tech",
+    storageBucket: "sauravdutt-tech.appspot.com",
+    messagingSenderId: "490520695117",
+    appId: "1:490520695117:web:25b768b9a73a968b43a704"
 });
 
 const auth = firebase.auth();
