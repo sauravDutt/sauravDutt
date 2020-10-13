@@ -34,7 +34,7 @@ const InfoComp = ({setShowInfo}) => {
                 <div className='post-info'>
                     <h3 className='post-title'>Info</h3>
                     <p>
-                        <b>sauravDutt.tech</b>, is my portfolio web site build by React js and Google Firebase. 
+                        <b>sd.sauravDutt.tech</b>, is my portfolio web site build by React js and Google Firebase. 
                         The application lets you add feeds or insights, read through tech related journals 
                         and also explore some of my work in progress and past projects .
                         Click on the down pointing arrow for navigation.

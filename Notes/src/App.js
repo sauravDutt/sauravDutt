@@ -13,7 +13,6 @@ import { ReactComponent as Dt } from './img/quadrocopter.svg';
 import { ReactComponent as PostsBtn } from './img/bookmark-regular.svg'
 import { ReactComponent as DataVisualisation } from './img/smartphone.svg';
 import { ReactComponent as Leftchevron } from './img/left-chevron.svg';
-import { ReactComponent as Settings } from './img/plus-solid.svg'; 
 import { CSSTransition } from 'react-transition-group';
 import InfoComp from './comps/InfoComp';
 import DroneTechComp from './comps/Dronetech';
@@ -22,7 +21,6 @@ import JavaScript from './comps/JavaScript';
 import PythonComp from './comps/Python';
 import Artificial from './comps/Ann';
 import Internet from './comps/iot';
-import Feeds from './comps/Feeds';
 
 
 
@@ -33,7 +31,6 @@ function App() {
   const showInformation = () => {
     setShowInfo(1);
   }
-  const [showFeeds, setShowFeeds] = useState(null);
   const [showJs, setShowJs] = useState(null);
   const [showD, setShowD] = useState(null);
   const [showPython, setShowPython] = useState(null);
@@ -44,10 +41,9 @@ function App() {
       <Navbar>
         <NavItem icon={<Info />} clickFunction={showInformation} />
         <NavItem icon={<Compass />}> 
-          <DropdownMenu setShowD={setShowD} setShowJs={setShowJs} setShowPython={setShowPython} setShowAnn={setShowAnn} setShowIot={setShowIot} setShowFeeds={setShowFeeds}/>
+          <DropdownMenu setShowD={setShowD} setShowJs={setShowJs} setShowPython={setShowPython} setShowAnn={setShowAnn} setShowIot={setShowIot} />
         </NavItem>
       </Navbar>
-      {showFeeds && <Feeds setShowFeeds={setShowFeeds}/>}
       {showIot && <Internet />}
       {showD && <DroneTechComp />}
       {showJs && <JavaScript />}
@@ -86,7 +82,7 @@ function NavItem(props) {
   );
 }
 
-function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIot, setShowFeeds}) {
+function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIot}) {
 
   
   const [activeMenu, setActiveMenu] = useState('main');
@@ -115,9 +111,6 @@ function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIo
   }
   const showInternet = () => {
     setShowIot(1);
-  }
-  const showFeedBacks = () => {
-    setShowFeeds(1);
   }
 
   function DropdownItem(props) {
@@ -154,13 +147,6 @@ function DropdownMenu({setShowD, setShowJs, setShowPython, setShowAnn, setShowIo
             rightIcon={<Blog />}
             goToMenu="feeds">
             Project Ideas
-          </DropdownItem>
-          <DropdownItem
-            leftIcon={<Settings />}
-            rightIcon={<Blog />}
-            clickFunction={showFeedBacks}
-            >
-            Add Insight
           </DropdownItem>
           
 
