@@ -94,7 +94,7 @@ a {
 /* <nav> */
 .navbar {
   margin-top: 0px;
-  margin-right: -120px;
+  margin-right: -110px;
   height: var(--nav-size);
   background-color: transparent;
   padding: 0 1rem;
