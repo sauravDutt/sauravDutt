@@ -1,13 +1,8 @@
 # sauravDutt 
 [![](resume.jpg)](https://www.sauravdutt.tech/)
 ### `Programmer | Tech Enthusiast | Learner`
-sauravDutt, or [sauravdutt.tech](https://www.sauravdutt.tech/) is my portfolio website created by  :- <br />
--> <b>React js</b>
--> <b>Node</b>
--> <b>Express</b>
--> <b>Mongo DB</b> 
--> <b>Also some other useful react libraries</b><br />
-Designed with a mobile first approach. This is also my last Javascript Web Dev project.
+sauravDutt, or [sauravdutt.tech](https://www.sauravdutt.tech/) is my portfolio website.
+
 
 ### `sauravdutt.tech`
 
