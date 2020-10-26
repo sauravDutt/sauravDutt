@@ -43,7 +43,7 @@ code {
   cursor: pointer;
 }
 #headerIcon:hover {
-  color: rgb(0, 162, 255);
+  color: rgb(110, 110, 110);
 }
 
 @media only screen and (max-width: 400px) {
