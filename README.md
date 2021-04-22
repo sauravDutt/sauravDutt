@@ -1,7 +1,6 @@
 # sauravDutt 
 
 ### `Programmer | Tech Enthusiast | Learner`
-### [`sauravdutt.tech`](https://www.sauravdutt.tech/) 
 
 <b>About</b><br />
 A little about me !! - 
