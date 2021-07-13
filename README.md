@@ -8,5 +8,5 @@
 
 For more info reach me out at the following 
 
-### [sauravdutt.in](https://sauravdutt.in/)
+### `[sauravdutt.in](https://sauravdutt.in/)`
 
