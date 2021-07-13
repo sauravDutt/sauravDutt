@@ -1,9 +1,6 @@
 # sauravDutt 
-<<<<<<< HEAD
-[![](resume.jpg)](https://www.sauravdutt.in/)
-=======
 
->>>>>>> 63449343e2834734d76ecb88c20861bd8f8f867a
+
 ### `Programmer | Tech Enthusiast | Learner`
 
 
