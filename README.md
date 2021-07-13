@@ -1,5 +1,5 @@
 # sauravDutt 
-[![](resume.jpg)](https://www.sauravdutt.tech/)
+[![](resume.jpg)](https://www.sauravdutt.in/)
 ### `Programmer | Tech Enthusiast | Learner`
 ### [`sauravdutt.tech`](https://www.sauravdutt.tech/) 
 
