@@ -10,5 +10,5 @@ I am a self taught web developer and a learner, I like to research about latest 
 
 For more info reach me out at the following......
 
-## [sauravDutt.com](https://sauravdutt.com/)
+## [goodtime.design](https://goodtime.design/)
 
